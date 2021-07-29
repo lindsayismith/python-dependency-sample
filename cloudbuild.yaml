@@ -1,8 +1,6 @@
 steps:
 - name: 'ubuntu'
   args: [ "bash", "-c", "find $$HOME -ls" ]
-- name: 'ubuntu'
-  args: [ "cat", "/builder/home/.netrc" ]
 - name: python
   entrypoint: pip
   args: ["install", "-r", "requirements.txt", "--user"]
